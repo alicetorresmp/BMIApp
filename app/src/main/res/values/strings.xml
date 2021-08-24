@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BMI App</string>
+    <string name="string_cm">cm</string>
+    <string name="string_kg">kg</string>
+    <string name="string_calculate">calculate</string>
+    <string name="str_hb_desc">healthy body</string>
+    <string name="str_your_bmi">your are</string>
+</resources>

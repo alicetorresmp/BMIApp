@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="215dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="213dp"
+            android:layout_height="92dp"
+            android:layout_marginTop="@dimen/margin_sixty_four"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="2">
+
+                <EditText
+                    android:id="@+id/input_height"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Your height"
+                    android:importantForAutofill="no"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/input_weight"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Your weight"
+                    android:importantForAutofill="no"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_cm"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/margin_eight"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_kg"
+                    android:layout_marginTop="@dimen/margin_eight"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/string_calculate"
+            android:layout_marginTop="@dimen/margin_sixteen"
+            android:backgroundTint="@color/pink_dark"/>
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_thirty_two"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center_horizontal"
+            android:textColor="@color/pink_light"
+            android:textSize="24sp"
+            android:visibility="invisible"
+            tools:text="your mbi is 21" />
+
+        <ImageView
+            android:id="@+id/image_body"
+            android:layout_marginTop="@dimen/margin_thirty_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/str_hb_desc"
+            android:src="@drawable/healthy"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
